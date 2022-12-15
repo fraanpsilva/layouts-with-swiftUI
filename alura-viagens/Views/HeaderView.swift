@@ -1,18 +1,17 @@
 //
-//  ContentView.swift
+//  HeaderView.swift
 //  alura-viagens
 //
-//  Created by Francilene Silva on 09/12/2022.
+//  Created by Francilene Silva on 15/12/2022.
 //
 
 import SwiftUI
 
-struct ContentView: View {
+struct HeaderView: View {
     var body: some View {
         GeometryReader{ view in
-            // MARK: - VStack Principal
+            
             VStack{
-                
                 // MARK: - VStack Header
                 VStack{
                     Text("alura viagens")
@@ -45,7 +44,9 @@ struct ContentView: View {
                     .frame(width: 100, height: 50)
                     .background(Color.blue)
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.blue, lineWidth: 10))
-                    .offset(x: -45)
+                    .offset(x: 50)
+                    
+                    Spacer()
                     
                     
                     Button(action: {}){
@@ -58,28 +59,18 @@ struct ContentView: View {
                     
                     // arrendondando as bordas do botão
                     .overlay(RoundedRectangle(cornerRadius: 10).stroke(Color.orange, lineWidth: 10))
-                    .offset(x: 45)
+                    .offset(x: -50)
                 }
                 .offset(y: -25)
-                
-            
-                // criando uma lista
-                List{
-                    Text("Rio de Janeiro")
-                    Text("Ceará")
-                    Text("Atibaia")
-                    Text("Rio de Janeiro")
-                }
             }
-        }
-        .edgesIgnoringSafeArea(.all)
-    }
-    
-    // struct de preview - serve apenas para mostrar a pré visualização
-    struct ContentView_Previews: PreviewProvider {
-        static var previews: some View {
-            ContentView()
+            
         }
     }
-    
+}
+
+struct HeaderView_Previews: PreviewProvider {
+    static var previews: some View {
+        HeaderView()
+            .previewLayout(.fixed(width: 400, height: 220))
+    }
 }

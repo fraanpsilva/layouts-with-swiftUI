@@ -7,18 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		28194093294B753E0036867F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28194092294B753D0036867F /* HeaderView.swift */; };
+		28194095294B766E0036867F /* CelulaViagemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28194094294B766E0036867F /* CelulaViagemView.swift */; };
 		28610BCB2943842000AB32FE /* alura_viagensApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28610BCA2943842000AB32FE /* alura_viagensApp.swift */; };
 		28610BCD2943842000AB32FE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28610BCC2943842000AB32FE /* ContentView.swift */; };
 		28610BCF2943842100AB32FE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28610BCE2943842100AB32FE /* Assets.xcassets */; };
 		28610BD22943842100AB32FE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 28610BD12943842100AB32FE /* Preview Assets.xcassets */; };
+		28EFDA99294A07B900E74DE6 /* Dados.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EFDA90294A07B800E74DE6 /* Dados.swift */; };
+		28EFDA9A294A07B900E74DE6 /* Viagem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 28EFDA91294A07B800E74DE6 /* Viagem.swift */; };
+		28EFDA9B294A07B900E74DE6 /* viagens.json in Resources */ = {isa = PBXBuildFile; fileRef = 28EFDA92294A07B900E74DE6 /* viagens.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		28194092294B753D0036867F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		28194094294B766E0036867F /* CelulaViagemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CelulaViagemView.swift; sourceTree = "<group>"; };
 		28610BC72943842000AB32FE /* alura-viagens.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "alura-viagens.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		28610BCA2943842000AB32FE /* alura_viagensApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alura_viagensApp.swift; sourceTree = "<group>"; };
 		28610BCC2943842000AB32FE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		28610BCE2943842100AB32FE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		28610BD12943842100AB32FE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		28EFDA90294A07B800E74DE6 /* Dados.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Dados.swift; sourceTree = "<group>"; };
+		28EFDA91294A07B800E74DE6 /* Viagem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Viagem.swift; sourceTree = "<group>"; };
+		28EFDA92294A07B900E74DE6 /* viagens.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = viagens.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +42,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		28194091294B74FA0036867F /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				28610BCC2943842000AB32FE /* ContentView.swift */,
+				28194092294B753D0036867F /* HeaderView.swift */,
+				28194094294B766E0036867F /* CelulaViagemView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		28610BBE2943842000AB32FE = {
 			isa = PBXGroup;
 			children = (
@@ -52,7 +72,9 @@
 			isa = PBXGroup;
 			children = (
 				28610BCA2943842000AB32FE /* alura_viagensApp.swift */,
-				28610BCC2943842000AB32FE /* ContentView.swift */,
+				28EFDA8F294A07B800E74DE6 /* Models */,
+				28194091294B74FA0036867F /* Views */,
+				28EFDA92294A07B900E74DE6 /* viagens.json */,
 				28610BCE2943842100AB32FE /* Assets.xcassets */,
 				28610BD02943842100AB32FE /* Preview Content */,
 			);
@@ -65,6 +87,15 @@
 				28610BD12943842100AB32FE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		28EFDA8F294A07B800E74DE6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				28EFDA90294A07B800E74DE6 /* Dados.swift */,
+				28EFDA91294A07B800E74DE6 /* Viagem.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -127,6 +158,7 @@
 			files = (
 				28610BD22943842100AB32FE /* Preview Assets.xcassets in Resources */,
 				28610BCF2943842100AB32FE /* Assets.xcassets in Resources */,
+				28EFDA9B294A07B900E74DE6 /* viagens.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +169,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28194093294B753E0036867F /* HeaderView.swift in Sources */,
+				28EFDA9A294A07B900E74DE6 /* Viagem.swift in Sources */,
 				28610BCD2943842000AB32FE /* ContentView.swift in Sources */,
+				28EFDA99294A07B900E74DE6 /* Dados.swift in Sources */,
 				28610BCB2943842000AB32FE /* alura_viagensApp.swift in Sources */,
+				28194095294B766E0036867F /* CelulaViagemView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
